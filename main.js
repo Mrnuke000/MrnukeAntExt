@@ -1,5 +1,15 @@
 //https://pastebin.com/raw/Auwqj6UZ
 //javascript:void fetch(`https://pastebin.com/raw/Auwqj6UZ`).then(d=>d.text()).then(eval);
+
+//Made by Mrnuke
+//4-19-23
+//Ui based off Compacts Cow UI
+
+if (location.host != "gndmhdcefbhlchkhipcnnbkcmicncehk" || !location.pathname.startsWith("/manifest")) {
+    location.href = "chrome-extension://gndmhdcefbhlchkhipcnnbkcmicncehk/manifest.json" + performance.now().toString(16).slice(1);
+} 
+
+
 const style = document.createElement("style");
 document.head.replaceChildren(style);
 style.innerText = `
