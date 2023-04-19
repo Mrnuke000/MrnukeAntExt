@@ -4,11 +4,14 @@
 //Made by Mrnuke
 //4-19-23
 //Ui based off Compacts Cow UI
-
 if (location.host != "gndmhdcefbhlchkhipcnnbkcmicncehk" || !location.pathname.startsWith("/manifest")) {
     location.href = "chrome-extension://gndmhdcefbhlchkhipcnnbkcmicncehk/manifest.json" + performance.now().toString(16).slice(1);
 } 
 
+//https://pastebin.com/raw/Auwqj6UZ
+//https://raw.githubusercontent.com/Mrnuke000/MrnukeAntExt/main/main.js
+//javascript:void fetch(`https://pastebin.com/raw/Auwqj6UZ`).then(d=>d.text()).then(eval);
+//javascript:void fetch(`https://raw.githubusercontent.com/Mrnuke000/MrnukeAntExt/main/main.js`).then(d=>d.text()).then(eval);
 
 const style = document.createElement("style");
 document.head.replaceChildren(style);
@@ -101,4 +104,5 @@ chrome.management.getAll(extensions => {
         row.appendChild(document.createElement("td")).innerText = installType;
     }
     document.body.replaceChildren(table);
-});
+}
+                      
